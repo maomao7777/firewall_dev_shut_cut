@@ -1,0 +1,12 @@
+/** Device short cut */
+1. Please insmod the dsc driver, command is "insmod dsc.ko"
+2. We can do configuration to the "/proc/dsc/dsc_config" interface
+3. For setting the WAN interface(e.g. eth2), please run
+    echo wan-add eth2 > /proc/dsc/dsc_config
+4. For setting the LAN interface(e.g. eth2), please run
+    echo lan_add eth2 > /proc/dsc/dsc_config
+5. For enabling the PPPOE passthrough, please run
+    echo pppoe 1 > /proc/dsc/dsc_config
+6. For setting the LAN IP address(e.g. 192.168.0.1, in hex format ), please run
+    echo lan_ip c0a80001 > /proc/dsc/dsc_config
+
